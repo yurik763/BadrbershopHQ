@@ -2,7 +2,7 @@
 require 'rubygems'
 require 'sinatra'
 require 'sinatra/reloader'
-require 'sinatra-activerecord'
+require 'sinatra/activerecord'
 
 set :database,  "sqlite3:barbershop.db"
 
@@ -13,5 +13,6 @@ class Barbers < ActiveRecord::Base
 end
 
 get '/' do
+	@barbers = Barbers.all
 	erb :index
 end
