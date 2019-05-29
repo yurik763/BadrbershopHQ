@@ -1,6 +1,6 @@
 class CreateClients < ActiveRecord::Migration[5.2]
   def change
-  	create_table :client do |t|  #в таблице будут созданы следующие столбцы
+  	create_table :clients do |t|  #в таблице будут созданы следующие столбцы
   		t.text :name
   		t.text :phone
   		t.text :datestamp
