@@ -48,3 +48,7 @@ post '/visit' do
   erb "<h2> Спасибо #{@username}, вы записались ! </h2>"
  
 end
+
+get '/contacts' do
+  erb :contacts
+end
