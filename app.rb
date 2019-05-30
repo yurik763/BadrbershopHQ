@@ -52,3 +52,17 @@ end
 get '/contacts' do
   erb :contacts
 end
+
+post '/contacts' do
+  @name = params[:name]
+  @comment = params[:comment]
+ 
+  c = Contact.new
+
+  c.name = @name
+  c.comment = @comment
+  c.save
+
+  erb "<h2> Спасибо ваше сообщение принято ! </h2>"
+ 
+end
