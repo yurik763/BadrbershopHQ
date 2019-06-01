@@ -49,10 +49,7 @@ get '/contacts' do
 end
 
 post '/contacts' do
-
   c = Contact.new params[:contact]
   c.save
-
   erb "<h2> Спасибо ваше сообщение принято ! </h2>"
- 
-end
+ end
