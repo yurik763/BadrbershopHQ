@@ -5,12 +5,12 @@
 
   <div class="form-group">
     <label>Ваше имя</label>
-    <input name="client[name]" type="text" class="form-control" placeholder="Ваше имя" value="">
+    <input name="client[name]" type="text" class="form-control" placeholder="Ваше имя" value="<%= @c.name %>">
   </div>
 
    <div class="form-group">
     <label>Ваше телефон</label>
-    <input name="client[phone]" type="text" class="form-control" placeholder="Ваше телефон" value="">
+    <input name="client[phone]" type="text" class="form-control" placeholder="Ваше телефон" value="%= @c.phone %>">
    </div>
 
    <div class="form-group">
