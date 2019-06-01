@@ -58,3 +58,8 @@ get '/barber/:id' do
   @barber = Barber.find(params[:id])
   erb :barber
 end
+
+get '/bookings' do
+  @clients = Client.order('created_at DESC') #если просто вывести пишем .all
+  erb :bookings
+end
